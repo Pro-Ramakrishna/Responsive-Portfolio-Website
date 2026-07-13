@@ -1,0 +1,203 @@
+ /* ================= HOME SECTION ================= */
+
+.sec1{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    min-height:90vh;
+    padding:60px 8%;
+    flex-wrap:wrap;
+}
+
+.sec-1-1{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.sec-1-1 img{
+    width:100%;
+    max-width:400px;
+    border-radius:50%;
+}
+
+.sec-1-2{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.sec-1-2-1{
+    font-weight:600;
+    font-size:18px;
+}
+
+h1{
+    font-size:48px;
+    color:darkorange;
+    line-height:1.2;
+}
+
+.sec-1-2-3{
+    font-size:24px;
+    font-weight:600;
+}
+
+.sec-1-2 p{
+    font-size:18px;
+    line-height:1.8;
+    max-width:650px;
+}
+
+.btns{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btns a,
+.btns button{
+    padding:12px 28px;
+    border-radius:30px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btns a{
+    border:2px solid #000;
+    background:transparent;
+    color:#000;
+}
+
+.btns a:hover{
+    background:#000;
+    color:#fff;
+}
+
+.btns button{
+    border:2px solid #000;
+    background:#000;
+    color:#fff;
+}
+
+.btns button:hover{
+    background:darkorange;
+    border-color:darkorange;
+}
+
+.social{
+    display:flex;
+    gap:20px;
+}
+
+.social img{
+    width:35px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.social img:hover{
+    transform:scale(.9);
+}
+
+/* ============ Tablet ============ */
+
+@media(max-width:1024px){
+
+    .sec1{
+        flex-direction:column;
+        text-align:center;
+        padding:50px 5%;
+    }
+
+    .sec-1-2{
+        align-items:center;
+    }
+
+    .sec-1-1 img{
+        max-width:350px;
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .sec-1-2-3{
+        font-size:22px;
+    }
+
+    .sec-1-2 p{
+        max-width:700px;
+    }
+
+}
+
+/* ============ Mobile ============ */
+
+@media(max-width:768px){
+
+    .sec1{
+        gap:35px;
+        padding:40px 20px;
+    }
+
+    .sec-1-1 img{
+        max-width:260px;
+    }
+
+    h1{
+        font-size:32px;
+    }
+
+    .sec-1-2-3{
+        font-size:20px;
+    }
+
+    .sec-1-2 p{
+        font-size:16px;
+        line-height:1.6;
+        max-width:100%;
+    }
+
+    .btns{
+        justify-content:center;
+    }
+
+    .btns a,
+    .btns button{
+        width:200px;
+        text-align:center;
+    }
+
+    .social{
+        justify-content:center;
+    }
+}
+
+/* ============ Small Mobile ============ */
+
+@media(max-width:480px){
+
+    h1{
+        font-size:28px;
+    }
+
+    .sec-1-2-3{
+        font-size:18px;
+    }
+
+    .sec-1-1 img{
+        max-width:220px;
+    }
+
+    .btns a,
+    .btns button{
+        width:180px;
+        padding:10px;
+        font-size:15px;
+    }
+}

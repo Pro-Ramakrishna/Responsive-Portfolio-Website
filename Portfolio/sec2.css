@@ -1,0 +1,176 @@
+ /* ================= ABOUT SECTION ================= */
+
+.sec2{
+    min-height:100vh;
+    padding:60px 8%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.sec-2-1{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+}
+
+.sec-2-1 span{
+    font-weight:600;
+}
+
+.sec-2-2{
+    margin-top:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:60px;
+    width:100%;
+    flex-wrap:wrap;
+}
+
+.sec-2-2-1{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.sec-2-2-1 img{
+    width:100%;
+    max-width:320px;
+    border-radius:50%;
+}
+
+.sec-2-2-2{
+    flex:2;
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+.sec-2-2-2-1{
+    display:flex;
+    gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.box{
+    flex:1;
+    min-width:260px;
+    max-width:320px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    border:2px solid #555;
+    border-radius:20px;
+    padding:25px;
+    gap:8px;
+}
+
+.box img{
+    width:35px;
+}
+
+.box span:nth-child(2){
+    font-size:20px;
+    font-weight:600;
+}
+
+.box span:nth-child(3),
+.box span:nth-child(4){
+    font-size:16px;
+}
+
+.p1{
+    width:100%;
+    line-height:1.8;
+    text-align:justify;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:1024px){
+
+    .sec2{
+        padding:50px 5%;
+    }
+
+    .sec-2-2{
+        flex-direction:column;
+        gap:40px;
+    }
+
+    .sec-2-2-2{
+        align-items:center;
+    }
+
+    .p1{
+        text-align:center;
+        max-width:700px;
+    }
+
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:768px){
+
+    .sec2{
+        padding:40px 20px;
+    }
+
+    .sec-2-2{
+        margin-top:40px;
+    }
+
+    .sec-2-2-1 img{
+        max-width:250px;
+    }
+
+    .sec-2-2-2-1{
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .box{
+        width:100%;
+        max-width:320px;
+    }
+
+    .p1{
+        font-size:16px;
+        text-align:center;
+    }
+
+}
+
+/* ================= Small Mobile ================= */
+
+@media(max-width:480px){
+
+    .sec-2-2-1 img{
+        max-width:200px;
+    }
+
+    .box{
+        padding:20px;
+    }
+
+    .box span:nth-child(2){
+        font-size:18px;
+    }
+
+    .box span:nth-child(3),
+    .box span:nth-child(4){
+        font-size:15px;
+    }
+
+    .p1{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+}

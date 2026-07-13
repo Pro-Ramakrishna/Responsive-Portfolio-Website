@@ -1,0 +1,147 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:"Poppins",sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:#000;
+    transition:.3s;
+}
+
+a:hover{
+    color:darkorange;
+    text-decoration:underline;
+    text-underline-offset:8px;
+    text-decoration-color:darkorange;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 8%;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:600;
+    color:darkorange;
+}
+
+.menu-bar{
+    display:flex;
+    list-style:none;
+    gap:40px;
+}
+
+.menu-bar li a{
+    font-size:20px;
+    font-weight:500;
+}
+
+/* Mobile Navbar */
+
+.navbar-menu{
+    display:none;
+}
+
+/* Tablet */
+@keyframes appear {
+    from{
+opacity: 0;
+transform: translateX(-200px);
+    }
+    to{
+opacity: 1;
+transform: translateX(0px);
+    }
+}
+.sec1,.sec2,.sec3,.sec4,.sec5{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+@media(max-width:1024px){
+
+    .navbar{
+        display:none;
+    }
+
+    .navbar-menu{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:20px;
+    }
+
+    .navbar-menu .logo{
+        font-size:26px;
+    }
+
+    .hamburger{
+        cursor:pointer;
+        font-size:32px;
+        z-index:1001;
+    }
+
+    .navbar-menu .menu-bar{
+        position:fixed;
+        top:70px;
+        right:-260px;
+        width:240px;
+        background:#fff;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        padding:20px;
+        box-shadow:0 5px 20px rgba(0,0,0,.15);
+        transition:.3s;
+    }
+
+    .navbar-menu .menu-bar.show{
+        right:20px;
+    }
+
+}
+
+/* Mobile */
+
+@media(max-width:767px){
+
+    .navbar-menu{
+        padding:15px;
+    }
+
+    .navbar-menu .logo{
+        font-size:20px;
+    }
+
+    .hamburger{
+        font-size:28px;
+    }
+
+    .navbar-menu .menu-bar{
+        width:200px;
+    }
+
+    .menu-bar li a{
+        font-size:18px;
+    }
+
+}
